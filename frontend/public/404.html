@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    // Redirect all paths to index.html for React Router
+    const path = window.location.pathname.replace('/noura', '');
+    sessionStorage.setItem('redirect', path || '/');
+    window.location.replace('/noura/');
+  </script>
+</head>
+</html>
